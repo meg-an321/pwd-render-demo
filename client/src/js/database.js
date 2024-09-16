@@ -1,5 +1,7 @@
 
-
+// import the openDB method from the idb module
+// The idb module is a wrapper around IndexedDB that makes it easier to use. It provides a simple interface for opening a database, 
+//creating an object store, and putting and getting data from the object store.
 import { openDB } from 'idb';
 
 const initdb = async () =>
@@ -18,6 +20,7 @@ const initdb = async () =>
 export const putDb = async (content) => {
   console.log('PUT to the database');
   const jateDb = await openDB('jate', 1);
+  // we created a transaction with readwrite access to the object store
   const tx = jateDb.transaction('jate', 'readwrite');
   const store = tx.objectStore('jate');
   const request = store.put({ id: 1, value: content });
@@ -39,5 +42,6 @@ export const getDb = async () => {
   // Check if a variable is defined and if it is, return it. See MDN Docs on Optional Chaining (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
   return result?.value;
 };
-
+// this function is called when the app is loaded
+// it initializes the IndexedDB database
 initdb();

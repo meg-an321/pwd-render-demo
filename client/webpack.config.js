@@ -53,6 +53,8 @@ module.exports = () => {
           test: /\.m?js$/,
           exclude: /node_modules/,
           use: {
+            // The babel-loader is used to transpile JavaScript files using Babel and Webpack.
+            //bable was added because the code uses modern JavaScript features that are not supported in all browsers.
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
