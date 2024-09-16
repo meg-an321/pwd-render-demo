@@ -1,5 +1,13 @@
 # PWA RENDER
 
+## Description
+This project is J.A.T.E. A JATE project typically focuses on facilitating the development of Java applications,
+ providing a structured approach for managing projects. 
+BootCamp students use Jate, an online text editor for writing and sharing texts, 
+primarily because it offers features like distraction-free writing, autosave functionality, 
+and the ability to easily export their work. It supports collaborative writing and allows users to focus 
+on their content without the clutter of traditional word processors
+
 ## User Story
 ```md
 AS A developer
@@ -47,3 +55,8 @@ npm run start
 
 3. Open Chrome Browser: localhost:3000
 ```
+
+## Links
+GitHub: https://github.com/meg-an321/pwd-render-demo
+
+Render.com: https://dashboard.render.com/web/srv-crk80drqf0us73df2f50/deploys/dep-crk80drqf0us73df2f90
